@@ -1,0 +1,54 @@
+body {
+    background-color: #202124;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    color: rgb(154, 160, 166);
+    margin-left: 238px;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+h3 {
+    font-weight: 400;
+
+}
+
+li {
+    padding-left: 40px
+}
+
+a {
+    text-decoration: none;
+    color: rgb(46, 130, 255);
+}
+
+div {
+    margin-top: 30px;
+    font-size: 13px;
+}
+
+.troll {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    opacity: 0;
+    animation-name: troll;
+    animation-delay: 5s;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes troll {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
